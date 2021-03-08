@@ -1,0 +1,30 @@
+{
+  "name": "mini-react",
+  "version": "1.0.0",
+  "description": "mini react",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack ./src/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walljser/mini-react.git"
+  },
+  "author": "walljs@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walljser/mini-react/issues"
+  },
+  "homepage": "https://github.com/walljser/mini-react#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-transform-react-jsx": "^7.12.17",
+    "@babel/preset-env": "^7.13.9",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.3",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0"
+  }
+}

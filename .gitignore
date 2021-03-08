@@ -1,0 +1,17 @@
+.DS_Store
+dist/
+lib/
+node_modules/
+node_modules.tar
+*.log
+npm-debug.log*
+coverage
+packages/*/coverage
+.vscode/
+.felintrc
+.idea/
+logs/
+.history/
+sites/config/.temp_cache/
+package-lock.json
+yarn.lock
