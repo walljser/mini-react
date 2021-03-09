@@ -1,10 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const babelConfig = require('../babel.config');
+
+const babelLoader = {
+  loader: 'babel-loader',
+  options: babelConfig
+};
 
 const tsLoaders = [
-  {
-    loader: 'babel-loader'
-  },
+  babelLoader,
   {
     loader: 'ts-loader',
     options: {
@@ -20,7 +24,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, '../build'),
-    filename: '[name]-[hash].js'
+    filename: '[name].js'
   },
 
   mode: 'development',
@@ -34,9 +38,7 @@ module.exports = {
       {
         test: /\.js$/,
         use: [
-          {
-            loader: 'babel-loader'
-          }
+          babelLoader
         ]
       },
       {
